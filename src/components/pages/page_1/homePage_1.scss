@@ -1,0 +1,156 @@
+.homePage_1 {
+  width: 100%;
+  height: 100vh;
+  background: var(--grey-900, #121829);
+  margin-left: 300px;
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    .swiper::selection {
+      user-select: none;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide .images .black {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.9)
+      );
+    }
+
+    .swiper-slide .images .black h4 {
+      font-size: 30px;
+      text-align: left;
+      position: relative;
+      top: 45%;
+      left: 5%;
+      color: #fff;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 1000px;
+      object-fit: contain;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 12px;
+      // opacity: 0.1;
+    }
+    .swiper-slide .images .black p {
+      width: 550px;
+      text-align: justify;
+      font-size: 16px;
+      color: #fff;
+      margin: 10px 0;
+      position: relative;
+      top: 45%;
+      left: 5%;
+      line-height: 23px;
+      font-family: Poppins;
+    }
+
+    .swiper-slide .images .black .genre {
+      display: flex;
+      gap: 10px;
+      text-align: left;
+      font-size: 16px;
+      margin: 13px 0;
+      position: relative;
+      top: 45%;
+      left: 5%;
+    }
+
+    .swiper-slide .images .black .genre a.category {
+      background: #282931;
+      text-decoration: none;
+      color: #cccccc;
+      padding: 2px 7px;
+
+      span {
+        color: gold;
+      }
+    }
+  }
+
+  .title {
+    padding-left: 79px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .weakTitle {
+      color: #fff;
+      font-size: 32px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .yourOption {
+      color: #868686;
+      text-align: center;
+      font-size: 22px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  h5 {
+    color: #fff;
+    font-size: 25px;
+    font-family: Poppins;
+    padding-left: 80px;
+    padding-top: 40px;
+  }
+
+  .moviesOptions {
+    display: flex;
+    justify-content: center;
+
+    .cartoons {
+      cursor: pointer;
+      padding-top: 15px;
+      display: flex;
+      gap: 31px;
+
+      div:hover {
+        transform: scale(1.2);
+        border: solid 3px red;
+        height: 230px;
+        border-radius: 10px;
+      }
+
+      div {
+        p {
+          color: #fff;
+          text-align: center;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 200;
+          padding-top: 5px;
+        }
+      }
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+}

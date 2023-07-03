@@ -1,0 +1,149 @@
+.signupPage {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--grey-900, #121829);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    gap: 800px;
+    padding: 40px;
+
+    p {
+      font-size: 40px;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .signupbtns {
+      border: none;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+
+    .regBtns {
+      width: 140px;
+      height: 60px;
+      font-size: 25px;
+      font-weight: 600;
+
+      &:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+      }
+
+      a {
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+      }
+    }
+
+    .signupBtn {
+      border: none;
+      color: #fff;
+      background: #111;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+
+    .active {
+      background: #2e497e;
+    }
+
+    .notActive {
+      background-color: #111;
+    }
+  }
+
+  .signupContainer {
+    width: 500px;
+    min-height: 600px;
+    border-radius: 20px;
+    background: #333;
+    box-shadow: 0px 3.0163094997406006px 9.325654029846191px 0px
+        rgba(0, 0, 0, 0.29),
+      0px 7.2486114501953125px 22.410844802856445px 0px rgba(0, 0, 0, 0.21),
+      0px 13.648491859436035px 42.197628021240234px 0px rgba(0, 0, 0, 0.17),
+      0px 24.346576690673828px 75.27336120605469px 0px rgba(0, 0, 0, 0.14),
+      0px 45.537593841552734px 140.79054260253906px 0px rgba(0, 0, 0, 0.12),
+      0px 109px 337px 0px rgba(0, 0, 0, 0.08);
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+
+    .signupTitle {
+      color: #fff;
+      letter-spacing: 1px;
+      padding-bottom: 50px;
+    }
+
+    .signupInputs {
+      background-color: #333;
+      border: none;
+      border-radius: 100px;
+      border: 3px solid #fff;
+      width: 400px;
+      height: 60px;
+      font-size: 20px;
+      padding-left: 20px;
+      align-items: center;
+      color: #fff;
+
+      &[type="text"]:focus {
+        border: none;
+        outline: 0.1em solid blue;
+      }
+    }
+
+    .signupRegBtn {
+      border-radius: 100px;
+      background: #2e497e;
+      border: none;
+      width: 170px;
+      height: 60px;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 25px;
+
+      &:active {
+        box-shadow: 0 1px #666;
+        transform: translateY(4px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      gap: 400px;
+    }
+
+    .signupContainer {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    header {
+      gap: 200px;
+    }
+
+    .signupContainer {
+      width: 80%;
+    }
+
+    .loginPage {
+      height: auto;
+    }
+  }
+}

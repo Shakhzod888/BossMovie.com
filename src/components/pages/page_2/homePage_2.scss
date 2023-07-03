@@ -1,0 +1,91 @@
+.homePage_2 {
+  width: auto;
+  height: 125vh;
+  background: var(--grey-900, #121829);
+  margin-left: 300px;
+
+  h4 {
+    color: #fff;
+    font-size: 25px;
+    font-family: Poppins;
+    padding-left: 80px;
+    padding-top: 130px;
+  }
+
+  h5 {
+    color: #fff;
+    font-size: 25px;
+    font-family: Poppins;
+    padding-left: 80px;
+    padding-top: 90px;
+  }
+
+  .moviesOptions {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+
+    .cartoons {
+      cursor: pointer;
+      display: flex;
+      gap: 31px;
+
+      div:hover {
+        transform: scale(1.2);
+        border: solid 3px red;
+        height: 230px;
+        border-radius: 10px;
+      }
+
+      div {
+        p {
+          color: #fff;
+          text-align: center;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 200;
+          padding-top: 5px;
+        }
+      }
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .moviesOptions_2 {
+    display: flex;
+    justify-content: center;
+
+    .cartoons_2 {
+      cursor: pointer;
+      padding-top: 15px;
+      display: flex;
+      gap: 31px;
+
+      div:hover {
+        transform: scale(1.2);
+        border: solid 3px red;
+        height: 230px;
+        border-radius: 10px;
+      }
+
+      div {
+        p {
+          color: #fff;
+          text-align: center;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 200;
+          padding-top: 5px;
+        }
+      }
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+}
