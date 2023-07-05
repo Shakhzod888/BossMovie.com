@@ -84,9 +84,7 @@ export default class HomePage_2 extends React.Component {
               </div>
               <div>
                 <img src={Movie_18} alt="" />
-                <p>
-                  The Lord Of the <br /> Rings: The <br /> Return of The King
-                </p>
+                <p>The Lord Of the Rings</p>
               </div>
             </div>
           </div>
